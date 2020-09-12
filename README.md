@@ -23,7 +23,7 @@ git checkout -b %%XX%%
  
 strpos($mystring, $wordToFind) === false ? 'Not Found' : 'Ok';
 
-
+# Symfony
 
 
 # JS
@@ -48,3 +48,46 @@ map
 # Server config
 
 # MYSQL
+
+
+=> Creating read only user 
+
+1. Log into MySQL as an admin
+ 
+        mysql -u root -p 
+ 
+2. Create a new MySQL user
+
+
+CREATE USER ‘$user‘@’127.0.0.1’ IDENTIFIED BY ‘$password‘;
+
+3. Grant read-only permission to the MySQL user
+
+
+GRANT SELECT, SHOW VIEW ON $database_name.* TO $user@’127.0.0.1′ IDENTIFIED BY ‘$password‘;
+
+FLUSH PRIVILEGES;
+
+If you want to use SSL connection, you can use the following instead
+
+GRANT SELECT, SHOW VIEW ON $database_name.* TO $user@’127.0.0.1′ IDENTIFIED BY ‘$password‘ REQUIRE SSL;
+
+FLUSH PRIVILEGES;
+
+
+=> allowing remote connections :
+
+1 - 
+
+sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf
+
+2 - you should now look for the line :
+bind-adress = 127.0.0.1 
+
+and change it to : 
+bind-address : 0.0.0.0
+
+NB : 0.0.0.0  will allow any ip accessing mysql 
+
+
+
