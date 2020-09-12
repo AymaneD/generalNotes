@@ -6,15 +6,15 @@ random  notes
 
 => remove all remotes
 
-git remote | xargs -n1 git remote remove
+        git remote | xargs -n1 git remote remove
 
 => add new remote 
 
-git remote add origin git@github.com:%%XX%%.git
+        git remote add origin git@github.com:%%XX%%.git
  
 => add new branch and switch to it 
 
-git checkout -b %%XX%%
+        git checkout -b %%XX%%
 
 # PHP 
 
@@ -59,18 +59,18 @@ map
 2. Create a new MySQL user
 
 
-CREATE USER ‘$user‘@’127.0.0.1’ IDENTIFIED BY ‘$password‘;
+        CREATE USER ‘$user‘@’127.0.0.1’ IDENTIFIED BY ‘$password‘;
 
 3. Grant read-only permission to the MySQL user
 
 
-GRANT SELECT, SHOW VIEW ON $database_name.* TO $user@’127.0.0.1′ IDENTIFIED BY ‘$password‘;
+        GRANT SELECT, SHOW VIEW ON $database_name.* TO $user@’127.0.0.1′ IDENTIFIED BY ‘$password‘;
 
-FLUSH PRIVILEGES;
+        FLUSH PRIVILEGES;
 
 If you want to use SSL connection, you can use the following instead
 
-GRANT SELECT, SHOW VIEW ON $database_name.* TO $user@’127.0.0.1′ IDENTIFIED BY ‘$password‘ REQUIRE SSL;
+        GRANT SELECT, SHOW VIEW ON $database_name.* TO $user@’127.0.0.1′ IDENTIFIED BY ‘$password‘ REQUIRE SSL;
 
 FLUSH PRIVILEGES;
 
@@ -79,13 +79,15 @@ FLUSH PRIVILEGES;
 
 1 - 
 
-sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf
+        sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf
 
 2 - you should now look for the line :
-bind-adress = 127.0.0.1 
+
+        bind-adress = 127.0.0.1 
 
 and change it to : 
-bind-address : 0.0.0.0
+
+        bind-address : 0.0.0.0
 
 NB : 0.0.0.0  will allow any ip accessing mysql 
 
