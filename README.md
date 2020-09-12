@@ -26,15 +26,25 @@ strpos($mystring, $wordToFind) === false ? 'Not Found' : 'Ok';
 
 
 
-#JS
+# JS
+
+=> get params from browser url 
+
+=> arrays :
+
+reduce
+filter
+map
+
+# Flutter / Dart
 
 
 
-
-#Rust
-
+# Rust
 
 
-#Server config
+# GoLang 
 
-#MYSQL
+# Server config
+
+# MYSQL
