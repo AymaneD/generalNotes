@@ -9,9 +9,11 @@ random  notes
 git remote | xargs -n1 git remote remove
 
 => add new remote 
+
 git remote add origin git@github.com:%%XX%%.git
  
 => add new branch and switch to it 
+
 git checkout -b %%XX%%
 
 # PHP 
