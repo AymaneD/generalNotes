@@ -47,6 +47,18 @@ map
 
 # Server config
 
+
+=> Installing JS Dependencies offline 
+
+1 -  install npm bundle -g in your first machien that have internet  https://github.com/majgis/npm-bundle
+
+2- npm-bundle %%XX%%  // %%XX%%  = package name
+
+3- you will see an archive package in the folder, get this file to your offline machine 
+
+4 - npm i %%XX%% // %%XX%%  = archive name
+
+
 # MYSQL
 
 
