@@ -36,6 +36,28 @@ reduce
 filter
 map
 
+
+# React
+
+
+# Lodash 
+
+=> import specifiq function only 
+
+import orderBy from "lodash/orderBy";
+
+# React ANTD 
+
+=> import specifiq  icon only 
+
+import RollbackOutlined  from "@ant-design/icons/RollbackOutlined";
+
+=> import specifiq item only
+
+import Modal from "antd/lib/modal";
+import 'antd/lib/modal/style/css';
+
+
 # Flutter / Dart
 
 
