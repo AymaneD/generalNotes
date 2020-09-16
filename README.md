@@ -39,9 +39,9 @@ map
 
 # React
 
-clearing interval in react hooks 
+=>   clearing interval in react hooks 
 
-=>   useEffect(() => {
+useEffect(() => {
     let intervalToBeCleared = setInterval(() => {
        //proccess here
     }, 6000);
