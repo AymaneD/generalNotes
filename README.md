@@ -39,7 +39,18 @@ map
 
 # React
 
+clearing interval in react hooks 
 
+=>   useEffect(() => {
+    let intervalToBeCleared = setInterval(() => {
+       //proccess here
+    }, 6000);
+    return () => {
+      clearInterval(intervalToBeCleared);
+    };
+  }, []);
+  
+  
 # Lodash 
 
 => import specifiq function only 
