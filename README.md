@@ -57,7 +57,7 @@ useEffect(() => {
 
 import orderBy from "lodash/orderBy";
 
-# React ANTD 
+# React ANTD ( Ant Design )
 
 => import specifiq  icon only 
 
@@ -69,6 +69,10 @@ import Modal from "antd/lib/modal";
 import 'antd/lib/modal/style/css';
 
 
+=> Select default value not working inside Form , you should use the Form  initialValues attr
+<Form initialValues={{
+            selectName: "defaultVal"
+           }} />
 # Flutter / Dart
 
 
