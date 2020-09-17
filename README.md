@@ -70,11 +70,22 @@ import 'antd/lib/modal/style/css';
 
 
 => Select default value not working inside Form , you should use the Form  initialValues attr
-<Form initialValues={{
+
+
+ <Form initialValues={{
             selectName: "defaultVal"
            }} />
            
-           
+=> start day in ant design datepicker  // antd use moment under the hood so we can update moment to achieve this
+
+import moment from 'moment'
+
+moment.updateLocale('en', {
+  weekdaysMin : [ "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" , "Sun"]
+});
+
+
+
 # Flutter / Dart
 
 
