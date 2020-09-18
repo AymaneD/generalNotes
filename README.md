@@ -21,7 +21,7 @@ random  notes
 #find a word in a string
 
  
-strpos($mystring, $wordToFind) === false ? 'Not Found' : 'Ok';
+        strpos($mystring, $wordToFind) === false ? 'Not Found' : 'Ok';
 
 # Symfony
 
@@ -41,48 +41,48 @@ map
 
 =>   clearing interval in react hooks 
 
-useEffect(() => {
-    let intervalToBeCleared = setInterval(() => {
-       //proccess here
-    }, 6000);
-    return () => {
-      clearInterval(intervalToBeCleared);
-    };
-  }, []);
+        useEffect(() => {
+                  let intervalToBeCleared = setInterval(() => {
+                         //proccess here
+                  }, 6000);
+           return () => {
+           clearInterval(intervalToBeCleared);
+          };
+         }, []);
   
   
 # Lodash 
 
 => import specifiq function only 
 
-import orderBy from "lodash/orderBy";
+        import orderBy from "lodash/orderBy";
 
 # React ANTD ( Ant Design )
 
 => import specifiq  icon only 
 
-import RollbackOutlined  from "@ant-design/icons/RollbackOutlined";
+        import RollbackOutlined  from "@ant-design/icons/RollbackOutlined";
 
 => import specifiq item only
 
-import Modal from "antd/lib/modal";
-import 'antd/lib/modal/style/css';
+        import Modal from "antd/lib/modal";
+        import 'antd/lib/modal/style/css';
 
 
 => Select default value not working inside Form , you should use the Form  initialValues attr
 
 
- <Form initialValues={{
+         <Form initialValues={{
             selectName: "defaultVal"
            }} />
            
 => start day in ant design datepicker  // antd use moment under the hood so we can update moment to achieve this
 
-import moment from 'moment'
+        import moment from 'moment'
 
-moment.updateLocale('en', {
-  weekdaysMin : [ "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" , "Sun"]
-});
+        moment.updateLocale('en', {
+          weekdaysMin : [ "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" , "Sun"]
+        });
 
 
 
