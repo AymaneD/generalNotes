@@ -36,7 +36,16 @@ reduce
 filter
 map
 
+=> Converting js object to array 
 
+ //function to be considered     
+
+    Object.keys(%%XX%% ) – returns an array of keys.
+    Object.values(%%XX%% ) – returns an array of values.
+    Object.entries(%%XX%% ) – returns an array of [key, value] pairs.
+  
+  
+    
 # React
 
 =>   clearing interval in react hooks 
