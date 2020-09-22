@@ -4,17 +4,54 @@ random  notes
 
 # GIT 
 
-=> remove all remotes
+### remove all remotes
 
         git remote | xargs -n1 git remote remove
 
-=> add new remote 
+### add new remote 
 
         git remote add origin git@github.com:%%XX%%.git
  
-=> add new branch and switch to it 
+### add new branch and switch to it 
 
         git checkout -b %%XX%%
+
+### config git merge tool 
+( we are using  vim ) 
+```
+git config merge.tool vimdiff
+```
+```
+git config merge.conflictstyle diff3
+```
+```
+git config mergetool.prompt false
+
+``` 
+### Choose a way resolbing the conflit
+If you want to get changes from REMOTE
+```
+:diffg RE  
+```
+If you want to get changes from BASE
+```
+:diffg BA  
+```
+If you want to get changes from LOCAL
+```
+:diffg LO 
+ ```
+### Save, Exit, Commit and Clean up after merge tool
+```
+:wqa  
+```
+```
+git commit -m "resolving conflit"
+```
+```
+git clean -i
+```
+
 
 # PHP 
 
