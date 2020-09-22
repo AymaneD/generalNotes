@@ -28,8 +28,11 @@ git config merge.conflictstyle diff3
 git config mergetool.prompt false
 
 ``` 
-### Choose a way resolbing the conflit
+
+### Choose a way to resolve the conflit
+
 If you want to get changes from REMOTE
+
 ```
 :diffg RE  
 ```
