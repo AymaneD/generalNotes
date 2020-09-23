@@ -88,8 +88,9 @@ map
     
 # React
 
-=>   clearing interval in react hooks 
+####  clearing interval in react hooks 
 
+```
         useEffect(() => {
                   let intervalToBeCleared = setInterval(() => {
                          //proccess here
@@ -98,42 +99,51 @@ map
            clearInterval(intervalToBeCleared);
           };
          }, []);
-  
+  ```
+ #### Comment in JSX 
+ ```
+ {/*this is a comment*/}
+
+ {
+        //this is another way to  comment , dont forget to break line
+ }
+ ```
   
 # Lodash 
 
-=> import specifiq function only 
-
+#### import specifiq function only 
+```
         import orderBy from "lodash/orderBy";
-
+```
 # React ANTD ( Ant Design )
 
-=> import specifiq  icon only 
-
+#### import specifiq  icon only 
+```
         import RollbackOutlined  from "@ant-design/icons/RollbackOutlined";
-
-=> import specifiq item only
-
+```
+#### import specifiq item only
+```
         import Modal from "antd/lib/modal";
         import 'antd/lib/modal/style/css';
+```
 
+#### Select default value not working inside Form , you should use the Form  initialValues attr
 
-=> Select default value not working inside Form , you should use the Form  initialValues attr
-
-
+```
          <Form initialValues={{
             selectName: "defaultVal"
            }} />
-           
-=> start day in ant design datepicker  // antd use moment under the hood so we can update moment to achieve this
-
+  ```         
+#### start day in ant design datepicker  // antd use moment under the hood so we can update moment to achieve this
+```
         import moment from 'moment'
-
+```
+```
         moment.updateLocale('en', {
           weekdaysMin : [ "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" , "Sun"]
         });
 
-
+```
 
 # Flutter / Dart
 
@@ -147,7 +157,7 @@ map
 # Server config
 
 
-=> Installing JS Dependencies offline 
+#### Installing JS Dependencies offline 
 
 1 -  install npm bundle -g in your first machien that have internet  https://github.com/majgis/npm-bundle
 
@@ -161,27 +171,29 @@ map
 # MYSQL
 
 
-=> Creating read only user 
+#### Creating read only user 
 
 1. Log into MySQL as an admin
- 
+ ```
         mysql -u root -p 
- 
+ ```
 2. Create a new MySQL user
 
-
+```
         CREATE USER ‘$user‘@’127.0.0.1’ IDENTIFIED BY ‘$password‘;
-
+```
 3. Grant read-only permission to the MySQL user
 
-
+```
         GRANT SELECT, SHOW VIEW ON $database_name.* TO $user@’127.0.0.1′ IDENTIFIED BY ‘$password‘;
 
         FLUSH PRIVILEGES;
+``` 
 
 If you want to use SSL connection, you can use the following instead
-
+```
         GRANT SELECT, SHOW VIEW ON $database_name.* TO $user@’127.0.0.1′ IDENTIFIED BY ‘$password‘ REQUIRE SSL;
+```
 
 FLUSH PRIVILEGES;
 
@@ -190,15 +202,21 @@ FLUSH PRIVILEGES;
 
 1 - 
 
+```
         sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf
+```
 
 2 - you should now look for the line :
 
+```
         bind-adress = 127.0.0.1 
+```
 
 and change it to : 
 
+```
         bind-address : 0.0.0.0
+```
 
 NB : 0.0.0.0  will allow any ip accessing mysql 
 
