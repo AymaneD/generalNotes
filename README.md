@@ -1,4 +1,4 @@
-# generalNotes
+# Random Notes and tips...
 random  notes
 %%XX%% is a variable to be changed
 
