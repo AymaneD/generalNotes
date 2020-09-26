@@ -6,18 +6,27 @@ random  notes
 
 #### remove all remotes
 
+```
         git remote | xargs -n1 git remote remove
+```
 
 #### add new remote 
-
+```
         git remote add origin git@github.com:%%XX%%.git
+ ```
  
 #### add new branch and switch to it 
-
+```
         git checkout -b %%XX%%
+```
+#### delete remote branch
+```
+git push origin --delete %%XX%%
+```
 
 #### config git merge tool 
 ( we are using  vim ) 
+
 ```
 git config merge.tool vimdiff
 ```
@@ -58,32 +67,33 @@ git clean -i
 
 # PHP 
 
-#find a word in a string
+#### find a word in a string
 
+```
  
         strpos($mystring, $wordToFind) === false ? 'Not Found' : 'Ok';
-
+```
 # Symfony
 
 
 # JS
 
-=> get params from browser url 
+####  get params from browser url 
 
-=> arrays :
+####  arrays :
 
 reduce
 filter
 map
 
-=> Converting js object to array 
+####  Converting js object to array 
 
  //function to be considered     
-
+```
     Object.keys(%%XX%% ) – returns an array of keys.
     Object.values(%%XX%% ) – returns an array of values.
     Object.entries(%%XX%% ) – returns an array of [key, value] pairs.
-  
+  ```
   
     
 # React
@@ -145,6 +155,9 @@ map
 
 ```
 
+# React Native
+
+
 # Flutter / Dart
 
 
@@ -160,12 +173,15 @@ map
 #### Installing JS Dependencies offline 
 
 1 -  install npm bundle -g in your first machien that have internet  https://github.com/majgis/npm-bundle
+ ```
+ npm install -g npm-bundle
+  ```
 
-2- npm-bundle %%XX%%  // %%XX%%  = package name
+2-  ``` npm-bundle %%XX%%  ```  // %%XX%%  = package name
 
 3- you will see an archive package in the folder, get this file to your offline machine 
 
-4 - npm i %%XX%% // %%XX%%  = archive name
+4 -  ``` npm i %%XX%%  ```  // %%XX%%  = archive name
 
 
 # MYSQL
