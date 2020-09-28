@@ -234,12 +234,13 @@ find
 If you want to use SSL connection, you can use the following instead
 ```
         GRANT SELECT, SHOW VIEW ON $database_name.* TO $user@’127.0.0.1′ IDENTIFIED BY ‘$password‘ REQUIRE SSL;
+        FLUSH PRIVILEGES;
+
 ```
 
-FLUSH PRIVILEGES;
+ 
 
-
-=> allowing remote connections :
+######  allowing remote connections :
 
 1 - 
 
