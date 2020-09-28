@@ -4,27 +4,29 @@ random  notes
 
 # GIT 
 
-#### remove all remotes
+#### Remove all remotes
 
 ```
         git remote | xargs -n1 git remote remove
 ```
 
-#### add new remote 
+#### Add new remote 
+
 ```
         git remote add origin git@github.com:%%XX%%.git
  ```
  
-#### add new branch and switch to it 
+#### Add new branch and switch to it 
 ```
         git checkout -b %%XX%%
 ```
-#### delete remote branch
+#### Delete remote branch
 ```
 git push origin --delete %%XX%%
 ```
 
-#### config git merge tool 
+#### Config git merge tool 
+
 ( we are using  vim ) 
 
 ```
@@ -38,7 +40,7 @@ git config mergetool.prompt false
 
 ``` 
 
-##### Choose a way to resolve the conflit
+###### Choose a way to resolve the conflit
 
 If you want to get changes from REMOTE
 
@@ -53,7 +55,9 @@ If you want to get changes from LOCAL
 ```
 :diffg LO 
  ```
+ 
 ###### Save, Exit, Commit and Clean up after merge tool
+
 ```
 :wqa  
 ```
@@ -67,7 +71,7 @@ git clean -i
 
 # PHP 
 
-#### find a word in a string
+#### Find a word in a string
 
 ```
  
@@ -85,6 +89,8 @@ git clean -i
 reduce
 filter
 map
+find
+
 
 ####  Converting js object to array 
 
@@ -122,16 +128,19 @@ map
 # Lodash 
 
 #### import specifiq function only 
+
 ```
         import orderBy from "lodash/orderBy";
 ```
 # React ANTD ( Ant Design )
 
 #### import specifiq  icon only 
+
 ```
         import RollbackOutlined  from "@ant-design/icons/RollbackOutlined";
 ```
 #### import specifiq item only
+
 ```
         import Modal from "antd/lib/modal";
         import 'antd/lib/modal/style/css';
@@ -144,7 +153,9 @@ map
             selectName: "defaultVal"
            }} />
   ```         
+  
 #### start day in ant design datepicker  // antd use moment under the hood so we can update moment to achieve this
+
 ```
         import moment from 'moment'
 ```
@@ -237,4 +248,55 @@ and change it to :
 NB : 0.0.0.0  will allow any ip accessing mysql 
 
 
+#### Triggers 
 
+###### Show existing Triggers   
+```
+```
+###### Delete a Trigger   
+```
+```
+###### Create a trigger   
+```
+```
+
+
+
+#### Stored Procedures 
+
+###### Show existing Procedures   
+```
+```
+###### Delete a stored procedure   
+```
+```
+###### Create a stored procedure   
+```
+```
+
+
+
+#### Views 
+
+###### Show existing Views   
+```
+```
+###### Delete a view   
+```
+```
+###### Create a view   
+```
+```
+
+#### Import csv to mysql  
+
+(change FILE_NAME , TABLE_NAME , and FIELDS_NAME , and also you can change the delimiter if it's not a coma etc... )
+
+```
+LOAD DATA LOCAL INFILE 'FILE_NAME'
+ INTO TABLE TABLE_NAME
+ FIELDS TERMINATED BY ',' OPTIONALLY ENCLOSED BY '"'
+ LINES TERMINATED BY '\n'
+ IGNORE 1 LINES
+ (FIELD_NAME_1,FIELD_NAME_2)
+ ```
