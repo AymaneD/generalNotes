@@ -240,7 +240,7 @@ If you want to use SSL connection, you can use the following instead
 
  
 
-######  allowing remote connections :
+####  allowing remote connections :
 
 1 - 
 
