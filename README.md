@@ -77,6 +77,20 @@ git clean -i
  
         strpos($mystring, $wordToFind) === false ? 'Not Found' : 'Ok';
 ```
+
+#### Call stored procedure 
+
+
+```
+$stmt = $dbh->prepare("CALL procedure_name(?)");
+$stmt->bindParam(1, $return_value, PDO::PARAM_STR, 4000); 
+
+$stmt->execute();
+
+print "returned val: $return_value\n";
+```
+
+
 # Symfony
 
 
@@ -280,18 +294,29 @@ DELIMITER ;
 
 
 
-#### Stored Procedures 
+#### Stored Procedures / Functions
 
 ###### Show existing Procedures   
 ```
+SHOW PROCEDURE STATUS;
+```
+
+```
+ SHOW FUNCTION STATUS;
 ```
 ###### Drop/Delete/Remove  a stored procedure   
 ```
+ DROP PROCEDURE procedure_name;
 ```
 ###### Create a stored procedure   
 ```
 ```
 
+###### Call/Execute a procedure
+```
+CALL procedure_name('a param');
+
+```
 
 
 #### Views 
@@ -331,3 +356,11 @@ LOAD DATA LOCAL INFILE 'FILE_NAME'
  IGNORE 1 LINES
  (FIELD_NAME_1,FIELD_NAME_2)
  ```
+ 
+ # SQL SERVER  
+ 
+ # Oracle  
+ 
+ # MongoDB  
+ 
+ # Redis
