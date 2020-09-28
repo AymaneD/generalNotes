@@ -252,12 +252,30 @@ NB : 0.0.0.0  will allow any ip accessing mysql
 
 ###### Show existing Triggers   
 ```
+SHOW TRIGGERS ;
 ```
-###### Delete a Trigger   
+
 ```
+SHOW TRIGGERS
+    [{FROM | IN} db_name]
+    [LIKE 'pattern' | WHERE expr]
+```
+
+
+###### Drop/Delete/Remove a Trigger   
+```
+DROP TRIGGER trigger_name;
 ```
 ###### Create a trigger   
 ```
+DELIMITER |
+CREATE TRIGGER trigger_name BEFORE INSERT
+ON table_name FOR EACH ROW
+BEGIN
+ 
+ 
+END |
+DELIMITER ;
 ```
 
 
@@ -267,7 +285,7 @@ NB : 0.0.0.0  will allow any ip accessing mysql
 ###### Show existing Procedures   
 ```
 ```
-###### Delete a stored procedure   
+###### Drop/Delete/Remove  a stored procedure   
 ```
 ```
 ###### Create a stored procedure   
@@ -280,12 +298,25 @@ NB : 0.0.0.0  will allow any ip accessing mysql
 
 ###### Show existing Views   
 ```
+SHOW CREATE VIEW 'view_name'
 ```
-###### Delete a view   
+OR 
 ```
+SELECT VIEW_DEFINITION FROM INFORMATION_SCHEMA.VIEWS
+   WHERE TABLE_NAME = 'view_name'
+
+```
+###### Drop/Delete/Remove  a view   
+```
+
+DROP VIEW view_name; 
 ```
 ###### Create a view   
+(change select 1 by you query )
 ```
+CREATE VIEW view_name
+AS 
+select 1
 ```
 
 #### Import csv to mysql  
