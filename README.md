@@ -38,7 +38,7 @@ git config mergetool.prompt false
 
 ``` 
 
-#### Choose a way to resolve the conflit
+##### Choose a way to resolve the conflit
 
 If you want to get changes from REMOTE
 
@@ -53,7 +53,7 @@ If you want to get changes from LOCAL
 ```
 :diffg LO 
  ```
-#### Save, Exit, Commit and Clean up after merge tool
+###### Save, Exit, Commit and Clean up after merge tool
 ```
 :wqa  
 ```
