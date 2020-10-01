@@ -147,12 +147,12 @@ find
  ```
  #### Access .env vars  
  
- let's supose .env file contain a variable called : API_URL
+ let's supose .env file contain a variable called : API_URL , you shoudl start it with REACT_APP_ , so : REACT_APP_API_URL
  
  ```
  ######### .env content ###########
  
- API_URL=github.com
+ REACT_APP_API_URL=github.com
  
  ######### .env content ###########
 
@@ -161,7 +161,7 @@ find
  
  so we can access it using : 
  ```  
-  process.env.API_URL
+  process.env.REACT_APP_API_URL
  ```  
   
  
