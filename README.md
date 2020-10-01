@@ -2,6 +2,13 @@
 random  notes
 %%XX%% is a variable to be changed
 
+# Linux 
+
+#### lines that exists in a file but not the other , 
+
+```
+cat file1.txt file2.txt | sort | uniq --unique
+```
 # GIT 
 
 #### Remove all remotes
@@ -138,7 +145,26 @@ find
         //this is another way to  comment , dont forget to break line
  }
  ```
+ #### Access .env vars  
+ 
+ let's supose .env file contain a variable called : API_URL
+ 
+ ```
+ ######### .env content ###########
+ 
+ API_URL=github.com
+ 
+ ######### .env content ###########
+
+ ```
+ 
+ 
+ so we can access it using : 
+ ```  
+  process.env.API_URL
+ ```  
   
+ 
 # Lodash 
 
 #### import specifiq function only 
