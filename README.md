@@ -24,9 +24,18 @@ cat file1.txt file2.txt | sort | uniq --unique
  ```
  
 #### Add new branch and switch to it 
+
 ```
         git checkout -b %%XX%%
 ```
+
+
+#### remove/discard unstaged changes
+
+```
+        git checkout -- .
+```
+
 #### Delete remote branch
 ```
 git push origin --delete %%XX%%
