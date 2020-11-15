@@ -112,6 +112,25 @@ print "returned val: $return_value\n";
 
 # JS
 
+#### Safely access nested object elements 
+
+```
+const   isset  = (fn , valToBeReturnOnError = undefined) => {
+    var value;
+    try {
+        value = fn();
+    } catch (e) {
+        value = undefined;
+    } finally {
+        return value !== undefined ? value : valToBeReturnOnError;
+    }
+};
+
+
+isset(() => window.test.testt[5].x  ) ; // it accept a second param that take a value to be returned in case of error else it will return undefined
+
+```
+
 ####  get params from browser url 
 ```
 function gup( name, url ) {
@@ -131,6 +150,9 @@ reduce
 filter
 map
 find
+
+
+
 
 
 ####  Converting js object to array 
