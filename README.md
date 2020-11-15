@@ -116,7 +116,7 @@ print "returned val: $return_value\n";
 
 ```
 const   isset  = (fn , valToBeReturnOnError = undefined) => {
-    var value;
+    let value;
     try {
         value = fn();
     } catch (e) {
