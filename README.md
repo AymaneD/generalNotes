@@ -9,6 +9,36 @@ random  notes
 ```
 cat file1.txt file2.txt | sort | uniq --unique
 ```
+
+#### config Nginx and NodeJS 
+
+```
+
+```
+
+#### Check Nginx config 
+
+```
+sudo nginx -t
+
+```
+#### PM2 Change default port for an app 
+
+-> File : ecosystem.config.cjs ( cjs ext for apps using import modules ) // use process.env.PORT to get the port in your app
+
+```
+module.exports = {
+  apps : [{
+    name: "appNodeProccess",
+    script: "./app.js",
+    node_args : '--experimental-modules',
+    autorestart: true,
+    env: {
+      PORT : 8888
+    }
+  }]
+}
+```
 # GIT 
 
 #### Remove all remotes
