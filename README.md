@@ -10,6 +10,19 @@ random  notes
 cat file1.txt file2.txt | sort | uniq --unique
 ```
 
+
+
+#### Burn ISO To USB Linux
+###### Replace X with your usb device name , you can found it by runing this command  first : lsblk  , then : 
+
+```
+ sudo dd bs=4M if=ubuntu-20.04.2-desktop-amd64.iso  of=/dev/sdc conv=fdatasync
+
+```
+
+
+
+
 #### config Nginx and NodeJS 
 
 ```
