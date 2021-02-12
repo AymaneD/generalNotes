@@ -10,7 +10,11 @@ random  notes
 cat file1.txt file2.txt | sort | uniq --unique
 ```
 
+#### Remove all files in current very large directory ( arguments list too long ) 
 
+```
+find . -maxdepth 1 -type f -exec rm -f {} \;
+```
 
 #### Burn ISO To USB Linux
 ###### Replace X with your usb device name , you can found it by runing this command  first : lsblk  , then : 
@@ -19,6 +23,7 @@ cat file1.txt file2.txt | sort | uniq --unique
  sudo dd bs=4M if=ubuntu-20.04.2-desktop-amd64.iso  of=/dev/sdc conv=fdatasync
 
 ```
+
 
 
 
