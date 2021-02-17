@@ -161,13 +161,20 @@ print "returned val: $return_value\n";
 
 ```
 sqldata:
+  container_name: mssql-express-container
   image: mcr.microsoft.com/mssql/server:2017-latest
   environment:
-    - SA_PASSWORD=YourStron@gPa@!!sWoord!
+    - SA_PASSWORD=YourPass@woord!!9986666666666REPLACEITHERE
     - ACCEPT_EULA=Y
     - MSSQL_PID=Express
   ports:
-    - "5434:1433"
+    - "1433:1433"
+```
+
+##### Docker stop all runing containers
+
+```
+docker stop $(docker ps -aq)
 ```
 
 # Symfony
