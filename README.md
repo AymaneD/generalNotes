@@ -4,7 +4,34 @@ random  notes
 
 # Linux 
 
-#### lines that exists in a file but not the other , 
+#### Screen 
+
+###### Check if we are in a screen
+```
+echo $STY
+```
+
+###### Create a screen session
+```
+screen -S sessionName
+```
+
+
+###### Switch to a screen session
+```
+screen -r sessionName
+```
+
+######  Exit a screen session
+```
+```
+
+###### Kill a screen session
+```
+```
+
+
+#### lines that exists in a file but not the other
 
 ```
 cat file1.txt file2.txt | sort | uniq --unique
@@ -200,6 +227,28 @@ const   isset  = (fn , valToBeReturnOnError = undefined) => {
 isset(() => window.test.testt[5].x  ) ; // it accept a second param that take a value to be returned in case of error else it will return undefined
 
 ```
+
+#### Animating numbers in js
+
+```
+const obj = document.getElementById("");
+
+function animateValue(obj, start, end, duration) {
+  let startTimestamp = null;
+  const step = (timestamp) => {
+    if (!startTimestamp) startTimestamp = timestamp;
+    const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+    obj.innerHTML = Math.floor(progress * (end - start) + start);
+    if (progress < 1) {
+      window.requestAnimationFrame(step);
+    }
+  };
+  window.requestAnimationFrame(step);
+}
+
+
+```
+
 
 ####  get params from browser url 
 ```
