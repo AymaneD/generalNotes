@@ -206,6 +206,16 @@ docker stop $(docker ps -aq)
 
 # Symfony
 
+#### Manually authenticate user 
+
+```
+use Symfony\Component\Security\Core\Authentication\Token\UsernamePasswordToken;
+
+// Manually authenticate user in controller
+$token = new UsernamePasswordToken($user, null, 'main', $user->getRoles());
+$this->get('security.token_storage')->setToken($token);
+$this->get('session')->set('_security_main', serialize($token));
+```
 
 # JS
 
@@ -306,9 +316,9 @@ find
         //this is another way to  comment , dont forget to break line
  }
  ```
- #### Access .env vars  
+ #### Access .env vars  in create-react-app
  
- let's supose .env file contain a variable called : API_URL , you shoudl start it with REACT_APP_ , so : REACT_APP_API_URL
+ let's supose .env file contain a variable   : API_URL , you shoudl start it with REACT_APP_ , Like : REACT_APP_API_URL
  
  ```
  ######### .env content ###########
@@ -320,7 +330,7 @@ find
  ```
  
  
- so we can access it using : 
+ Then we can access it using : 
  ```  
   process.env.REACT_APP_API_URL
  ```  
