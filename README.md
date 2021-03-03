@@ -284,6 +284,27 @@ find
 
 
 
+####  Sort numeric array
+
+ ```
+
+
+
+arr.sort(function(a, b) {
+ return a - b; // ascending
+});
+arr.sort(function(a, b) {
+ return b - a; // descending
+});
+
+
+  ```
+  
+  
+  
+  
+
+
 ####  Converting js object to array 
 
  //function to be considered     
