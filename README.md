@@ -162,6 +162,35 @@ git clean -i
 
 # PHP 
 
+
+#### Get User IP Adress 
+
+```
+function getUserIP() {
+    $ipaddress = '';
+    if (isset($_SERVER['HTTP_CLIENT_IP']))
+        $ipaddress = $_SERVER['HTTP_CLIENT_IP'];
+    else if(isset($_SERVER['HTTP_X_FORWARDED_FOR']))
+        $ipaddress = $_SERVER['HTTP_X_FORWARDED_FOR'];
+    else if(isset($_SERVER['HTTP_X_FORWARDED']))
+        $ipaddress = $_SERVER['HTTP_X_FORWARDED'];
+    else if(isset($_SERVER['HTTP_X_CLUSTER_CLIENT_IP']))
+        $ipaddress = $_SERVER['HTTP_X_CLUSTER_CLIENT_IP'];
+    else if(isset($_SERVER['HTTP_FORWARDED_FOR']))
+        $ipaddress = $_SERVER['HTTP_FORWARDED_FOR'];
+    else if(isset($_SERVER['HTTP_FORWARDED']))
+        $ipaddress = $_SERVER['HTTP_FORWARDED'];
+    else if(isset($_SERVER['REMOTE_ADDR']))
+        $ipaddress = $_SERVER['REMOTE_ADDR'];
+    else
+        $ipaddress = 'UNKNOWN';
+    return $ipaddress;
+}
+
+```
+
+
+
 #### Find a word in a string
 
 ```
@@ -283,6 +312,19 @@ find
 
 
 
+  
+  
+
+
+####  Converting js object to array 
+
+ //function to be considered     
+```
+    Object.keys(%%XX%% ) – returns an array of keys.
+    Object.values(%%XX%% ) – returns an array of values.
+    Object.entries(%%XX%% ) – returns an array of [key, value] pairs.
+  ```
+  
 
 ####  Sort numeric array
 
@@ -300,19 +342,6 @@ arr.sort(function(a, b) {
 
   ```
   
-  
-  
-  
-
-
-####  Converting js object to array 
-
- //function to be considered     
-```
-    Object.keys(%%XX%% ) – returns an array of keys.
-    Object.values(%%XX%% ) – returns an array of values.
-    Object.entries(%%XX%% ) – returns an array of [key, value] pairs.
-  ```
   
     
 # React
