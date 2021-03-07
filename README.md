@@ -162,6 +162,13 @@ git clean -i
 
 # PHP 
 
+#### NULL Byte Sanitizer
+
+```
+
+$txt = str_replace(chr(0), '', $txt);
+
+```
 
 #### Get User IP Adress 
 
