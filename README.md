@@ -31,6 +31,12 @@ screen -r sessionName
 ```
 
 
+#### show only subdirectories inside a folder
+
+```
+find /path/ -type d -print
+```
+
 #### lines that exists in a file but not the other
 
 ```
