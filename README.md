@@ -652,22 +652,47 @@ CQRS
 ###### S.O.L.I.D  :
 
 Single Responsibility Principle
+
 Open/Closed Principle
+
 Liskov Substitution Principle 
+
 Interface Segregation Principle
+
 Dependency Inversion
 
-###### GRASP patterns :
+##### GRASP patterns :
 
 Creator
+
 Information Expert
+
 Low Coupling
+
 Controller
+
 High Cohesion
+
 Indirection
+
 Polymorphism
+
 Protected Variations
+
 Pure Fabrication
+
+##### Design patterns :
+
+###### Types of Design Patterns
+
+
+Behavioral  : Chain of responsibility, Command, Interpreter, Iterator, Mediator, Memento, Null Object, Observer, State, Strategy, Template method, Visitor 
+
+Creational  : Factory Method, Abstract Factory, Builder, Singleton, Object Pool, and Prototype. 
+
+Structural  : Adapter, Bridge, Composite, Decorator, Facade, Flyweight, Private Class Data, and Proxy
+
+ 
 
 
 ###### Urbanisation - BPMN 
