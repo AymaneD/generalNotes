@@ -625,3 +625,45 @@ LOAD DATA LOCAL INFILE 'FILE_NAME'
  # MongoDB  
  
  # Redis
+
+
+
+# Software engeneering 
+
+#### Architecture 
+
+DDD
+Explicit architecture
+Hexagonale
+CQRS
+
+
+#### Other
+
+###### Keep It Simple Stupid (KISS) 
+
+###### Don’t Repeat Yourself (DRY) 
+
+###### S.O.L.I.D  :
+
+Single Responsibility Principle
+Open/Closed Principle
+Liskov Substitution Principle 
+Interface Segregation Principle
+Dependency Inversion
+
+###### GRASP patterns :
+
+Creator
+Information Expert
+Low Coupling
+Controller
+High Cohesion
+Indirection
+Polymorphism
+Protected Variations
+Pure Fabrication
+
+
+###### Urbanisation - BPMN 
+
