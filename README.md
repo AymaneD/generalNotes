@@ -258,6 +258,11 @@ $token = new UsernamePasswordToken($user, null, 'main', $user->getRoles());
 $this->get('security.token_storage')->setToken($token);
 $this->get('session')->set('_security_main', serialize($token));
 ```
+#### Security.yml conf 
+
+  
+[Security.yml conf ref on  symfony website  ](https://symfony.com/doc/current/reference/configuration/security.html "Security.yml conf symfony website")
+
 
 # JS
 
@@ -628,7 +633,7 @@ LOAD DATA LOCAL INFILE 'FILE_NAME'
 
 
 
-# Software engeneering 
+# Software engineering 
 
 #### Architecture 
 
