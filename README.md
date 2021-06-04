@@ -638,16 +638,19 @@ LOAD DATA LOCAL INFILE 'FILE_NAME'
 #### Architecture 
 
 DDD
+
 Explicit architecture
+
 Hexagonale
+
 CQRS
 
 
 #### Other
 
-###### Keep It Simple Stupid (KISS) 
+##### Keep It Simple Stupid (KISS) 
 
-###### Don’t Repeat Yourself (DRY) 
+##### Don’t Repeat Yourself (DRY) 
 
 ###### S.O.L.I.D  :
 
