@@ -632,6 +632,16 @@ LOAD DATA LOCAL INFILE 'FILE_NAME'
  # Redis
 
 
+# Security
+
+ 3 types of XSS Atacks : 
+
+- Stored XSS (AKA Persistent or Type I)
+
+- Reflected XSS (AKA Non-Persistent or Type II)
+
+- DOM Based XSS (AKA Type-0)
+
 
 # Software engineering 
 
@@ -645,15 +655,7 @@ Hexagonale
 
 CQRS
 
-#### Security
 
- 3 types of XSS Atacks : 
-
-- Stored XSS (AKA Persistent or Type I)
-
-- Reflected XSS (AKA Non-Persistent or Type II)
-
-- DOM Based XSS (AKA Type-0)
     
     
 
@@ -710,4 +712,6 @@ Structural  : Adapter, Bridge, Composite, Decorator, Facade, Flyweight, Private 
 
 
 ###### Urbanisation - BPMN 
+
+
 
