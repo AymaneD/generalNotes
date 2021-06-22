@@ -645,6 +645,17 @@ Hexagonale
 
 CQRS
 
+#### Security
+
+ 3 types of XSS Atacks : 
+
+- Stored XSS (AKA Persistent or Type I)
+
+- Reflected XSS (AKA Non-Persistent or Type II)
+
+- DOM Based XSS (AKA Type-0)
+    
+    
 
 #### Other
 
