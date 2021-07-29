@@ -361,6 +361,15 @@ arr.sort(function(a, b) {
   ```
   
   
+####  node-gyp dependencies err on linux
+
+ ```
+ 
+  sudo apt-get install libxtst-dev libpng++-dev
+  
+  ```
+  
+  
     
 # React
 
