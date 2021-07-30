@@ -211,6 +211,44 @@ function getUserIP() {
         strpos($mystring, $wordToFind) === false ? 'Not Found' : 'Ok';
 ```
 
+```
+
+/**
+ * remove string from the first one passed on param if exists on the end
+ * @param string $baseStr
+ * @param string $stringToFind
+ * @return string
+ */
+function removeSecondStringFromTheFirstOneIfExists( string $baseStr, string $stringToFind): string
+{
+    return preg_replace('/'. preg_quote($stringToFind, '/') . '$/', '', $baseStr);
+}
+/**
+ * remove string from the first one passed on param if exists on the end
+ * @param string $baseStr
+ * @param bool $withTrim
+ * @return string
+ */
+function removeSecondStringIfItsDuplicated( string $baseStr ,bool $withTrim = false): string
+{
+    if($withTrim){
+        $baseStr=trim($baseStr);
+    }
+    $strLength = strlen($baseStr); 
+    if($strLength%2 === 0 && $strLength != 0){
+
+        $firstPart = trim(str_split($baseStr,$strLength/2)[0]) ;
+        $secondPart =  trim(str_split($baseStr,$strLength/2)[1])  ;
+
+        if($firstPart === $secondPart){
+            return $firstPart ;
+        }
+
+    }
+    return $baseStr;
+}
+```
+
 #### Call stored procedure 
 
 
