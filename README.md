@@ -284,6 +284,18 @@ sqldata:
 docker stop $(docker ps -aq)
 ```
 
+
+##### use docker without sudo in linux
+
+```
+sudo usermod -aG docker ${USER}
+
+su - ${USER}
+
+```
+
+
+
 # Symfony
 
 #### Manually authenticate user 
