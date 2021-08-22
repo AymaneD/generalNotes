@@ -701,6 +701,14 @@ LOAD DATA LOCAL INFILE 'FILE_NAME'
 
 - DOM Based XSS (AKA Type-0)
 
+# Front End 
+
+#### Organisation  
+
+Atomic Design  => Atoms , Molecules,  Organisms, Templates, Pages
+
+CSS => OOCSS, ACSS, BEM, SMACSS
+
 
 # Software engineering 
 
