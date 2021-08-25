@@ -316,6 +316,12 @@ $this->get('session')->set('_security_main', serialize($token));
 
 # JS
 
+#### List all npm packages installed globally
+
+```
+ls `npm root -g`
+```
+
 #### Safely access nested object elements 
 
 ```
