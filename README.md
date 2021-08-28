@@ -29,6 +29,13 @@ screen -r sessionName
 ###### Kill a screen session
 ```
 ```
+#### who is listening on a specifiq port 
+```
+
+sudo lsof -i:3306
+
+```
+
 
 
 #### show only subdirectories inside a folder
