@@ -431,8 +431,44 @@ arr.sort(function(a, b) {
   sudo apt-get install libxtst-dev libpng++-dev
   
   ```
+  ####  deep search inside all window document 
+ ```
   
-  
+  function globalSearch(startObject, value) {
+    var stack = [[startObject,'']];
+    var searched = [];
+    var found = false;
+
+    var isArray = function(test) {
+        return Object.prototype.toString.call( test ) === '[object Array]';
+    }
+
+    while(stack.length) {
+        var fromStack = stack.pop();
+        var obj = fromStack[0];
+        var address = fromStack[1];
+
+        if( typeof obj == typeof value && obj == value) {
+            var found = address;
+            break;
+        }else if(typeof obj == "object" && searched.indexOf(obj) == -1){
+           if ( isArray(obj) ) {
+              var prefix = '[';
+              var postfix = ']';
+           }else {
+              var prefix = '.';
+              var postfix = '';
+           }
+           for( i in obj ) {
+              stack.push( [ obj[i], address + prefix + i + postfix ] );
+           }
+           searched.push(obj);
+        }
+    }
+    return found == '' ? true : found;
+}
+
+``` 
     
 # React
 
