@@ -44,6 +44,12 @@ sudo lsof -i:3306
 find /path/ -type d -print
 ```
 
+#### rename/add prefix to all files in a folder
+
+```
+for f in * ; do mv -- "$f" "PRE_$f" ; done
+```
+
 #### lines that exists in a file but not the other
 
 ```
