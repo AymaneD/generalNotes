@@ -36,6 +36,21 @@ sudo lsof -i:3306
 
 ```
 
+#### show only first 10 lines of file
+
+
+```
+head -10 FILE_NAME
+
+```
+
+#### show only last 10 lines of file
+
+
+```
+tail -10 FILE_NAME
+
+```
 
 
 #### show only subdirectories inside a folder
