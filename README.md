@@ -29,6 +29,13 @@ screen -r sessionName
 ###### Kill a screen session
 ```
 ```
+
+###### Linux port 
+
+    From 0 to 1023: These ports are known as well-known ports. These ports can only be used by system (or root) processes or by programs executed by privileged users.
+    From 1024 to 49151: These ports are known as the Registered ports. These ports can be used by ordinary user processes or programs executed by ordinary users.
+    From 49152 to 65535: These ports are known as Dynamic Ports.
+    
 #### who is listening on a specifiq port 
 ```
 
