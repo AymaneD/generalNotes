@@ -779,7 +779,13 @@ LOAD DATA LOCAL INFILE 'FILE_NAME'
 - DOM Based XSS (AKA Type-0)
 
 # Front End 
+#### web vitals 
+   1- Largest Contentful Paint (LCP): LCP measures the loading performance of the largest element visible within the viewport. It's an important metric because it reflects how quickly the main content of a web page becomes visible to the user. A good LCP score means faster load times and a better user experience.
 
+  2- First Input Delay (FID): FID measures the responsiveness of a web page by capturing the time it takes for the page to respond to a user's first interaction (e.g., clicking a button or selecting a menu). A lower FID score indicates a more responsive page.
+
+ 3 -   Cumulative Layout Shift (CLS): CLS quantifies the visual stability of a web page by measuring the extent to which page elements move or shift after the initial render. A low CLS score means fewer unexpected layout shifts, which helps prevent user frustration.
+    
 #### Organisation  
 
 Atomic Design  => Atoms , Molecules,  Organisms, Templates, Pages
