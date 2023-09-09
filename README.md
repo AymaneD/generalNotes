@@ -779,6 +779,7 @@ LOAD DATA LOCAL INFILE 'FILE_NAME'
 - DOM Based XSS (AKA Type-0)
 
 # Front End 
+
 #### web vitals 
    1- Largest Contentful Paint (LCP): LCP measures the loading performance of the largest element visible within the viewport. It's an important metric because it reflects how quickly the main content of a web page becomes visible to the user. A good LCP score means faster load times and a better user experience.
 
@@ -792,6 +793,12 @@ Atomic Design  => Atoms , Molecules,  Organisms, Templates, Pages
 
 CSS => OOCSS, ACSS, BEM, SMACSS
 
+#### Rendering Strategies  
+
+1. CSR stands for Client Side Rendering   
+2. SSR stands for Server Side Rendering  
+3. SSG stands for Static Site Generation   
+4. ISR stands for Incremental Static Regeneration
 
 # Software engineering 
 
