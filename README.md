@@ -357,6 +357,11 @@ $this->get('session')->set('_security_main', serialize($token));
 ls `npm root -g`
 ```
 
+#### create nvmrc file
+```sh
+node -v > .nvmrc
+```
+
 #### Safely access nested object elements 
 
 ```
